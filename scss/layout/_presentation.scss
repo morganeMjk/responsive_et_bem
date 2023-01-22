@@ -1,0 +1,40 @@
+.presentation {
+    height: 542px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../img/fond.png);
+    background-size: cover;
+    background-position: center;
+
+    &__titre {
+        background-color: #5B359D;
+        width: 241px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+        gap: 8px;
+
+        &__logo {
+            width: 27px;
+            height: 27px;
+        }
+
+        &__mpg {
+            font-family: 'Comic Neue', cursive;
+            font-style: italic;
+        }
+    }
+}
+
+
+@media screen and (min-width: 481px) {
+    .presentation {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

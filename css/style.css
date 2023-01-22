@@ -1,0 +1,236 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    height: 1795px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    height: 1000px;
+  }
+}
+.nav__entete {
+  background-color: #5B359D;
+  font-family: "Comic Neue", cursive;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__entete__logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+  gap: 20px;
+}
+.nav__entete__logo__icone {
+  height: 35px;
+}
+.nav__entete__menu {
+  height: 22px;
+  margin-right: 20px;
+}
+.nav__liste {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  gap: 5px;
+  margin: 0px;
+  font-size: 19px;
+}
+.nav__liste__li {
+  list-style: none;
+}
+.nav__liste__li__lien {
+  color: black;
+  text-decoration: none;
+}
+.nav__liste__li__lien:hover {
+  color: #5B359D;
+}
+
+@media screen and (min-width: 481px) {
+  .nav {
+    display: flex;
+    height: 50px;
+  }
+  .nav__entete {
+    width: 50%;
+    padding-left: 40px;
+  }
+  .nav__entete__menu {
+    display: none;
+  }
+  .nav__liste {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    height: 50px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__entete {
+    width: 30%;
+  }
+  .nav__liste {
+    width: 70%;
+  }
+}
+.presentation {
+  height: 542px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../img/fond.png);
+  background-size: cover;
+  background-position: center;
+}
+.presentation__titre {
+  background-color: #5B359D;
+  width: 241px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  gap: 8px;
+}
+.presentation__titre__logo {
+  width: 27px;
+  height: 27px;
+}
+.presentation__titre__mpg {
+  font-family: "Comic Neue", cursive;
+  font-style: italic;
+}
+
+@media screen and (min-width: 481px) {
+  .presentation {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.activite {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.activite__role {
+  margin: 50px 10px;
+  font-size: 28px;
+}
+.activite__avis {
+  font-size: 26px;
+  margin: 50px 20px 0px 20px;
+}
+.activite__auteur {
+  opacity: 40%;
+  font-size: 20px;
+}
+
+.categorie {
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.detail {
+  margin: 0px 30px 30px 30px;
+}
+
+@media screen and (min-width: 481px) {
+  .activite__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .box {
+    width: 50%;
+  }
+  .activite__avis {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .activite__role {
+    width: 60%;
+    margin: 40px auto;
+  }
+  .activite__box {
+    flex-wrap: nowrap;
+    width: 1000px;
+    margin-bottom: 60px;
+  }
+}
+.footer {
+  background-color: #5B359D;
+  padding-top: 20px;
+  font-weight: bold;
+  color: white;
+}
+.footer__info {
+  margin-left: 20px;
+}
+.footer__localisation {
+  text-align: center;
+  margin: 0px 40px;
+  font-size: 15px;
+}
+.footer__reseaux {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 70px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.rubriques {
+  list-style: none;
+  opacity: 50%;
+  font-size: 18px;
+}
+
+.li {
+  list-style-type: disc;
+}
+
+.lien {
+  text-decoration: none;
+  color: white;
+}
+
+.adresse {
+  list-style: none;
+}
+
+@media screen and (min-width: 481px) {
+  .footer__reseaux {
+    width: 40%;
+    margin: 20px auto;
+  }
+  .footer__info {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0px auto;
+    gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+.activite {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__role {
+        margin: 50px 10px;
+        font-size: 28px;
+    }
+
+    &__avis {
+        font-size: 26px;
+        margin: 50px 20px 0px 20px;
+    }
+
+    &__auteur {
+        opacity: 40%;
+        font-size: 20px;
+    }
+}
+
+.categorie {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    margin: 0px 30px 30px 30px;
+}
+
+@media screen and (min-width: 481px) {
+.activite__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.box {
+    width: 50%;
+}
+
+.activite__avis {
+    width: 60%;
+    margin: 20px auto;
+}
+}
+
+
+@media screen and (min-width: 1280px) {
+.activite__role {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.activite__box {
+    flex-wrap: nowrap;
+    width: 1000px;
+    margin-bottom: 60px;
+}
+
+
+}
